@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="QuickNote - 简单高效的笔记工具">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+    <title>QuickNote - 快速笔记</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/dark-mode.css">
+    <link rel="preload" href="static/js/main.js" as="script">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>QuickNote</h1>
+            <div class="toolbar">
+                <button id="themeToggle" aria-label="切换主题">🌓</button>
+                <button id="clearBtn" aria-label="清空内容">🗑️</button>
+                <button id="downloadBtn" aria-label="下载笔记">💾</button>
+            </div>
+        </header>
+        <main>
+            <textarea 
+                id="notepad" 
+                placeholder="开始输入..." 
+                aria-label="笔记内容"
+                spellcheck="true"
+                autocomplete="off"
+            ></textarea>
+            <div class="status" id="status" role="status" aria-live="polite"></div>
+            <div class="word-count" id="wordCount">字数：0</div>
+        </main>
+        <footer>
+            <p class="copyright">&copy; 2024 QuickNote | <button id="clearStorageBtn">清除所有数据</button></p>
+        </footer>
+    </div>
+    <script src="static/js/utils.js" defer></script>
+    <script src="static/js/theme.js" defer></script>
+    <script src="static/js/main.js" defer></script>
+</body>
+</html>
