@@ -18,7 +18,8 @@
 - CSS3
 - JavaScript (原生)
 - Python (用于开发服务器)
-
+### 项目截图
+![alt text](image-1.png)
 ## 快速开始
 
 1. 克隆仓库
@@ -36,22 +37,7 @@ python server.py
 3. 访问应用
 打开浏览器访问 `http://localhost:8000`
 
-## 项目结构
-quicknote/
-├── static/
-│ ├── css/
-│ │ ├── style.css
-│ │ └── dark-mode.css
-│ ├── js/
-│ │ ├── main.js
-│ │ ├── theme.js
-│ │ └── utils.js
-│ └── img/
-│ └── favicon.ico
-├── index.html
-├── server.py
-├── LICENSE
-└── README.md
+
 
 ## 贡献
 
